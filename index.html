@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>React Hello World</title>
+    
+</head>
+<body>
+    <div id="application-root"></div>
+  
+  <script
+    src="https://unpkg.com/react@16/umd/react.development.js">
+  </script>
+  <script
+    src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+  </script>
+  <script
+    src="https://unpkg.com/babel-standalone@6/babel.min.js">
+  </script>
+  <script type="text/babel">
+    // Our code will go here
+    function App() {
+  
+  return (
+      <div>
+        <header>
+        <h1>Sally Student Resume</h1>
+        </header>
+        <main>
+          <section>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg"
+            alt="A photo of Sally Student"
+            height="600" />
+            <h2>Contact Info:</h2>
+            <p>Contact me by email or phone:</p>
+            <address>
+            <a href="mailto:sally@sally.com">sally@sally.com</a><br />
+            <a href="tel:55555555">(555) 555-5555</a>
+            </address>
+        </section>
+        <section>
+            <h2>Education:</h2>
+            <h3>Tufts University, 2015-2019</h3>
+            <ul>
+                <li>B.S in Coding</li>
+                <li>worked on coding team of...</li>
+            </ul>
+            <h3>Awesome High School, 2011-2015</h3>
+            <ul>
+                <li>Captain Football Team</li>
+                <li>Honors Society</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Employment:</h2>
+            <h3>Scientist at Science Labs 2016-2019</h3>
+            <ul>
+                <li>for this last bit, feel free to use lorem ipsum filler text</li>
+                <li>for this last bit, feel free to use lorem ipsum filler text</li>
+            </ul>
+            <h3>Ice Cream Maker, Sundae School 2011-2015</h3>
+            <ul>
+                <li>for this last bit, feel free to use lorem ipsum filler text</li>
+                <li>for this last bit, feel free to use lorem ipsum filler text</li>
+            </ul>
+        </section>
+    </main>
+    </div>
+  );
+}
+
+// Nested elements inside the App
+ReactDOM.render(
+  <App />,
+  document.querySelector('#application-root')
+);
+</script>
+  </body>
+</html>
